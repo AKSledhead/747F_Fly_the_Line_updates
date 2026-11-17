@@ -1,8 +1,13 @@
-# 747 Fly the Line — updates
+# 747 Fly the Line — Freighter — updates
 
 The SkunkCrafts Updater depot for **747 Fly the Line**, a plugin that flies
-the First Officer and Flight Engineer of the Felis Boeing 747-200 freighter
-in X-Plane 12.
+the First Officer and Flight Engineer of the Felis Boeing 747-200 in
+X-Plane 12.
+
+**This depot is for the FREIGHTER, `747F_Felis`.** The Felis passenger
+747-200 is a separate aeroplane and will have its own build and its own
+depot; this one will not drive it. Nothing here is wired to the passenger
+airframe yet.
 
 This repository holds released binaries only. It is not the source.
 
