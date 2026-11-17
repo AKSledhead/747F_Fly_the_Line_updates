@@ -1,0 +1,3 @@
+64/747_Fly_the_Line_settings.txt
+64/747_Fly_the_Line_settings.txt.bak
+64/747_Fly_the_Line.log
