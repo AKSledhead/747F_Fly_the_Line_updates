@@ -1,4 +1,10 @@
-﻿0.9.280
+﻿0.9.282
+- Fixed: On a Mac, X-Plane crashed while the aircraft loaded. The plugin now draws the way X-Plane needs it to on macOS. The cockpit tablet stays switched off on macOS until it has been tested there; the panel is in its window
+- Fixed: In icing conditions at the gate, engine anti-ice was switched on and called before the engines were started. On the ground it now waits until all four are running
+- Changed: The aircraft's own tablet is what you see first. Our panel starts put away; the tab on the tablet's right edge brings it up
+- Changed: The tab is hidden while the takeoff calculator, the flight plan, the checklist or the QRH is open on the tablet. Back closes them
+
+0.9.280
 - Added: The panel is on the tablets in the cockpit - the captain's, the first officer's and the flight engineer's - and is worked there with the mouse. Nothing in the aircraft's files is changed
     - The tab on the tablet's right edge puts the panel away, which gives the screen back to the aircraft's own pages and AviTab, and brings it back
     - The takeoff calculator, the flight plan, the checklist and the QRH slide in over the panel there instead of opening as windows
