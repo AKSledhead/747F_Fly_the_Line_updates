@@ -1,7 +1,7 @@
-64/lin.xpl|5764336
-64/mac.xpl|8936760
-64/win.xpl|3630080
-changelog.txt|7555
+64/lin.xpl|5809952
+64/mac.xpl|8989560
+64/win.xpl|3625472
+changelog.txt|8387
 THIRD_PARTY_NOTICES.txt|13444
 voice/EU/al_antiskid_ground_test_call.wav|69180
 voice/EU/al_apu_call.wav|37972

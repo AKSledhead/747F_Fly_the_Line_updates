@@ -1,4 +1,12 @@
-﻿0.9.275
+﻿0.9.280
+- Added: The panel is on the tablets in the cockpit - the captain's, the first officer's and the flight engineer's - and is worked there with the mouse. Nothing in the aircraft's files is changed
+    - The tab on the tablet's right edge puts the panel away, which gives the screen back to the aircraft's own pages and AviTab, and brings it back
+    - The takeoff calculator, the flight plan, the checklist and the QRH slide in over the panel there instead of opening as windows
+    - In an outside view, in VR, or with the tablets hidden, the panel is its ordinary window
+    - Settings > Display > Show on the cockpit tablet, or the Plugins menu, turns it off
+- Changed: The takeoff calculator is laid out like the rest of the panel: the airport, the conditions, the aeroplane and the result, each in its own card
+
+0.9.275
 - Changed: The crew's voices are part of the plugin now, in its own voice folder, so the updater delivers them along with any new lines. Voices already in Resources\sounds\Felis B742F are still found; that folder can be deleted once this version is installed
 - Fixed: With the UK or European voices, some checklist answers switched to the American voice every other time
 - Changed: A new panel. The pages are down the left side - Flight, Checklist, Profile, Performance, QRH, Weather, Log, Settings - with the crew underneath
