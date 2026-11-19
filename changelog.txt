@@ -1,0 +1,74 @@
+﻿0.9.275
+- Changed: The crew's voices are part of the plugin now, in its own voice folder, so the updater delivers them along with any new lines. Voices already in Resources\sounds\Felis B742F are still found; that folder can be deleted once this version is installed
+- Fixed: With the UK or European voices, some checklist answers switched to the American voice every other time
+- Changed: A new panel. The pages are down the left side - Flight, Checklist, Profile, Performance, QRH, Weather, Log, Settings - with the crew underneath
+    - A step card at the top of the Flight page says what the crew are waiting on you for, or what they are doing
+    - One action button at the foot of the page, with Skip beside it. It greys out and says what is under way once pressed
+    - A compact two-row view, and the whole panel tucks away to the edge of the screen
+    - Light and dark themes, and it follows the Display scale
+- Added: Flight progress on the Flight page: the plan's profile with the aeroplane on it, top of climb and top of descent, distance flown and to go
+- Added: Open items. Anything put off - a skipped checklist, speeds not calculated, the arrival altimeter not set - is listed when it starts to matter
+- Added: The QRH is a checklist you work through, not a page you read. Steps are ticked off, your place is kept, and a condition is a question you answer
+- Added: Turnaround. At the gate with the engines shut down, start the next leg from there instead of securing the aeroplane
+- Added: Three kinds of cruise pause - so many miles from the arrival airport, before a waypoint on the route, or at a Zulu time - and time compression in the cruise
+- Added: The simulator pauses if the aeroplane has been flying away from the destination for twenty minutes. Press Off-track is deliberate if it is
+- Added: With SayIntentions, everything the controller says is in the Log page
+- Added: Name your crew, under their chips on the left
+- Added: The departure runway on the Flight page before takeoff, the approach runway after
+- Added: The crew know when the APU is inoperative, from the aircraft's own failures page. Only ground power is offered at the gate, the engineer says so, and at the arrival gate he calls for a ground cart before the engines are shut down
+- Changed: "GPU, then transfer to APU" brings ground power on and stops there. Transfer to APU power is its own button on the Flight page, for when you want the APU - usually a few minutes before pushback
+- Changed: The checklist page follows the item being called, and the captain answers the first officer's items
+- Changed: At the gate the phase reads Preflight until you begin, rather than Off
+- Changed: The cruise pause's Airport box shows the airport it is measuring from. Type another to override it; clear it to follow the plan
+- Changed: Standing the crew down hands you the fuel panel as well, and the engineer says so
+- Changed: The log starts fresh each time the aircraft is loaded
+- Removed: Ambient crew chatter, and the splash screen
+- Fixed: Engines could be starved of fuel in the cruise with fuel still on board. The engineer now changes the feed before a tank an engine is drawing from runs low, sets the panel for landing, and checks the panel after each change
+- Fixed: The air conditioning packs could stay closed after takeoff
+- Fixed: Cleared onto runway, Prepare for descent and Shut down engines looked unpressed while the crew were acting on them
+- Fixed: Engine anti-ice switched on and off every thirty seconds in cloud
+- Fixed: The panel lost its size when X-Plane was minimised or resized, and windows could be left off screen
+- Fixed: The last flight's radio calls were written into the log again at the start of the next
+
+0.9.226
+- Added: Takeoff and approach briefings. The captain reads them and the crew answer
+    - Offered as the step once the before-start checklist is done, and again as the descent begins. Skip either one if you'd rather brief it yourself
+    - Takeoff: runway, flaps, derate rating, takeoff thrust, V1, rotate, V2, initial altitude, transition altitude, noise abatement profile and the wind
+    - Approach: runway, landing flaps, transition level, VREF, minimums and the wind
+    - The initial altitude is whatever is in the altitude window, so it follows your clearance
+    - Buttons on the Performance page too, to hear one again
+    - The words are on screen while they're spoken, and anything the crew can't say aloud is written there instead
+- Added: UK, European and German/Dutch crew voices, alongside the American ones
+    - Pick yours under Settings > Crew. Only the accents you have installed are listed
+- Changed: Settings are grouped by what they're about - Display, Crew, Automation - instead of by when in the flight they apply. Text size and the flight plan stay where they were
+- Fixed: The crew said nothing when asking ATC for a step climb - those three lines were missing from the voice pack
+- Fixed: The takeoff performance calculator could drive the stabiliser trim in aircraft other than the Felis
+
+0.9.221
+First numbered release. Everything below is what the plugin does today.
+
+- Added: A first officer and a flight engineer for the Felis 747-200 freighter. They run the flows and the callouts from the Felis handbooks, and only ever in that aircraft
+- Added: Normal checklists, called and answered by the crew, with the items checked against the real switches and the current item highlighted as you go
+    - Manual tap or automatic advance, your choice
+    - Reference items read the aircraft and show you the value rather than asking you for it
+    - Skip or reset a checklist at any point
+- Added: QRH. The emergency and abnormal checklists, searchable, with the ones the crew can actually run for you marked
+- Added: Takeoff performance calculator, built from the Performance Handbook tables for this aircraft
+    - Assumed temperature derate, Rating I and Rating II, or no derate at all
+    - V1, VR and V2, flap setting, thrust setting in EPR or N1
+    - Field elevation, runway length, slope and wind filled in from X-Plane's own airport data and the live METAR
+- Added: Engine start, APU and electrical power run by the engineer, on your word
+- Added: Departure climb flown to a NADP profile, with the cleared altitude respected
+- Added: In the cruise, the engineer watches fuel against the plan every hour, calls the step climb when the aircraft has burned down to it, and calls top of descent
+- Added: The crew can ask SayIntentions ATC for the step climb and wait for the clearance before going up
+- Added: The first officer sets the altitude window from SayIntentions ATC clearances, climb or descent, for the whole flight
+- Added: Weather. METAR and TAF for both ends, and the ATIS from SayIntentions, FAA D-ATIS, VATSIM or IVAO
+- Added: SimBrief flight plans, with the OFP on screen and the numbers filled in for you
+- Added: Spoken crew callouts, with the volume and the accent your own
+- Added: Cockpit lighting set for the time of day, anti-ice when the conditions call for it, and fuel managed through the flight
+- Added: Pause the simulator approaching the destination, or when fuel reaches a figure you set
+- Added: The panel. One page at a time down the left: flight, checklist, QRH, performance, weather, log and settings
+    - Dark and light
+    - Tuck it away to a small 747 on the edge of the screen, and click that to bring it back
+    - Text size to taste
+- Added: macOS and Linux versions
