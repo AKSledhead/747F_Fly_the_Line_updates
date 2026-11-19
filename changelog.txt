@@ -1,4 +1,19 @@
-﻿0.9.288
+﻿0.9.289
+- Added: The flight engineer balances the fuel. Tanks 2 and 3 more than 450 kg apart on tanks 2 & 3 to all engines: the low tank's crossfeed is closed until they are within 250 kg (FHB). On tank to engine, more than 500 kg apart: the high and low tanks' crossfeeds open, the others closed, the low tank's pumps off, until within 250 kg. Cruise only, never across a suspected leak
+- Fixed: A landing in any stage of the flight now runs the rollout, the after-landing flow and parking - even if Prepare for descent was never pressed or the Before Landing checklist was not done
+- Changed: Descending without pressing Prepare for descent, near the top of descent or below FL180, starts the crew's descent preparation
+- Fixed: After a go-around the approach callouts are made again on the next approach, and only while descending
+- Changed: "Eighty knots" on the rollout is called on indicated airspeed
+- Added: "Parking brake is not set" on the Secure Cockpit checklist
+- Changed, to the Felis normal procedures:
+    - The autopilot goes in at 1,200 ft after takeoff, not 1,000
+    - One pack (pack 2) on the APU in the preflight, not three
+    - The pressurization flight level scale is set to the cruising level plus 1,000 ft in the preflight, and follows each step climb
+    - ALT HOLD is selected on levelling off after the climb and after each step climb
+    - Go-around: HDG on the nav mode selector, flaps brought up to 5 and CLB set; further clean-up is yours
+- Removed: Fuel heat. The freighter has none
+
+0.9.288
 - Changed: Pack 2 stays in automatic for the whole flight. The crew no longer shut it down in the cruise
 - Added: Choose an INS or HDG departure in the takeoff calculator. The first officer sets the autopilot to it as you line up
 - Changed: In Optimum mode the Profile page shows the next step climb and roughly when, instead of "None planned"
