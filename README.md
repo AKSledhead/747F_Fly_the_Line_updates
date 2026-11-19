@@ -28,6 +28,23 @@ de-duplicate plugins, so a stray global copy means the Felis loads both:
 two flight loops, two stage machines, doubled callouts. If anything happens
 twice, look for a second `.xpl` before anything else.
 
+## Disable similar add-ons
+
+This plugin's first officer and flight engineer work their own panels: the
+fuel panel, the electrics, the pneumatics, the lights. **Any other add-on
+that does the same job must be disabled for the Felis**, or the two will
+fight over the same switches — one sets a crossfeed, the other sets it back.
+
+That includes automatic fuel management scripts, XFirstOfficer, and any
+other first officer or flight engineer add-on for this aircraft.
+
+## The crew's voices
+
+The voices ship in this depot, in `voice/<accent>/`, and the updater keeps
+them current along with the plugin. Three accents: `US`, `UK` and `EU`.
+Delete a folder you don't want and it disappears from the plugin's list;
+the next update puts it back.
+
 ## A Felis update will remove this plugin
 
 Aircraft updates often replace the whole aircraft folder, and this plugin
