@@ -1,4 +1,21 @@
-﻿0.9.282
+﻿0.9.286
+- Fixed: The automatic climb could hold a climb rate the aircraft could not sustain. On a heavy departure the speed schedule gave up after five minutes if the flaps were not yet up, then flew a fixed climb rate towards 250 knots for the rest of the climb
+    - It no longer gives up on a clock, and it lets the speed rise past 250 while the last flaps are still coming up, as they need
+    - If it does fall back to a plain climb rate, it aims for the right speed for the altitude and returns to speed hold once the aircraft is there, including when you hand the climb back to the crew
+    - Climb rate changes are paced, come off quickly when speed is being lost, and are limited to 2,000 fpm above 10,000 ft and 1,500 above FL250. Every change is written to the log
+- Added: The first officer calls N2 rising as each engine starts to turn
+- Added: The takeoff calculator warns when the aircraft has not been loaded yet. With a flight plan loaded it compares the aircraft's weight with the plan's takeoff weight, under the Weight box and beside the speeds. Load with the aircraft's Fast Load or its load manager; either works
+- Added: The crew say so when a Before Starting Engines item is waiting on you: gear lever, parking brake, start levers, a pulled fire handle, or low engine oil
+- Changed: In their preflight the crew now set the switches the Before Starting Engines checklist asks about: pressurization mode to auto, outflow valves, equipment cooling and crew oxygen for the engineer; speed brake lever, flight control hydraulic power, autobrakes, stab trim cutout and flight directors for the first officer
+- Added: The first officer says so when the flaps are not at the planned takeoff setting after the crew have set them, and it is listed under open items
+- Changed: Anti-skid is switched on and its guard closed at lineup
+- Changed: After takeoff the gear lever goes to off only once all the gear lights are out
+- Changed: The After Starting Engines checklist cannot be called until all four engines are stable
+- Changed: The Checklist page goes back to the top when a new checklist takes over
+- Fixed: The Taxi checklist moved on from Flight controls before the control check was finished. It now waits for all three axes, rudder included, and each back to neutral
+- Fixed: Set takeoff trim was greyed out before engine start with nothing to say why
+
+0.9.282
 - Fixed: On a Mac, X-Plane crashed while the aircraft loaded. The plugin now draws the way X-Plane needs it to on macOS. The cockpit tablet stays switched off on macOS until it has been tested there; the panel is in its window
 - Fixed: In icing conditions at the gate, engine anti-ice was switched on and called before the engines were started. On the ground it now waits until all four are running
 - Changed: The aircraft's own tablet is what you see first. Our panel starts put away; the tab on the tablet's right edge brings it up

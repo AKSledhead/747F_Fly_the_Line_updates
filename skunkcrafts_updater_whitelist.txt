@@ -1,7 +1,7 @@
-64/lin.xpl|3152287149
-64/mac.xpl|2151559306
-64/win.xpl|3233643399
-changelog.txt|2462873566
+64/lin.xpl|376521908
+64/mac.xpl|138078820
+64/win.xpl|4283963388
+changelog.txt|1258616716
 THIRD_PARTY_NOTICES.txt|782793607
 voice/EU/al_antiskid_ground_test_call.wav|2313869093
 voice/EU/al_apu_call.wav|443434694
@@ -167,6 +167,7 @@ voice/EU/fe_fire_engine_1.wav|2548965541
 voice/EU/fe_fire_engine_2.wav|144122995
 voice/EU/fe_fire_engine_3.wav|4004644599
 voice/EU/fe_fire_engine_4.wav|1088986114
+voice/EU/fe_fire_handle_pulled.wav|1052244024
 voice/EU/fe_fire_wheel_well.wav|3787112482
 voice/EU/fe_fuel_below_reserve.wav|2315970447
 voice/EU/fe_fuel_check.wav|483155876
@@ -186,6 +187,7 @@ voice/EU/fe_not_in_reverse_1.wav|2182427006
 voice/EU/fe_not_in_reverse_2.wav|960601669
 voice/EU/fe_not_in_reverse_3.wav|3086304922
 voice/EU/fe_not_in_reverse_4.wav|435107629
+voice/EU/fe_oil_quantity_low.wav|1845597123
 voice/EU/fe_press_auto_fail.wav|3254133286
 voice/EU/fe_reverse_n1.wav|2434350974
 voice/EU/fe_stabilized_forward_thrust.wav|3869564915
@@ -214,6 +216,7 @@ voice/EU/fo_flaps_10_set.wav|2818826161
 voice/EU/fo_flaps_10_speed.wav|38580123
 voice/EU/fo_flaps_20_set.wav|1087047764
 voice/EU/fo_flaps_5_speed.wav|3839868940
+voice/EU/fo_flaps_not_set_for_takeoff.wav|1389470213
 voice/EU/fo_flaps_up_speed.wav|4060915879
 voice/EU/fo_flight_directors_still_off.wav|1642456430
 voice/EU/fo_fuel_on_lever.wav|3075955681
@@ -221,6 +224,7 @@ voice/EU/fo_full_back.wav|1670530759
 voice/EU/fo_full_forward.wav|1619241416
 voice/EU/fo_full_left.wav|3780537839
 voice/EU/fo_full_right.wav|1614857692
+voice/EU/fo_gear_lever_not_down.wav|3726010305
 voice/EU/fo_greeting_afternoon.wav|1590288060
 voice/EU/fo_greeting_evening.wav|2586389288
 voice/EU/fo_greeting_morning.wav|2652674159
@@ -231,11 +235,13 @@ voice/EU/fo_icing_conditions.wav|2424046909
 voice/EU/fo_light_off.wav|2652242595
 voice/EU/fo_mcp_altitude_set.wav|3397584817
 voice/EU/fo_minimums.wav|4245924717
+voice/EU/fo_n2_rising.wav|3630653820
 voice/EU/fo_neutral.wav|962457202
 voice/EU/fo_no_questions.wav|3336010396
 voice/EU/fo_off_track.wav|2873945645
 voice/EU/fo_one_thousand.wav|1572327667
 voice/EU/fo_one_thousand_to_go.wav|2037363805
+voice/EU/fo_parking_brake_not_set.wav|3364326314
 voice/EU/fo_positive_rate.wav|2898170592
 voice/EU/fo_ready_for_before_start.wav|3948941204
 voice/EU/fo_ready_for_descent.wav|2973170984
@@ -247,6 +253,7 @@ voice/EU/fo_rotate.wav|26855450
 voice/EU/fo_rudder_left.wav|4176689548
 voice/EU/fo_rudder_neutral.wav|2986232042
 voice/EU/fo_rudder_right.wav|1461046568
+voice/EU/fo_start_levers_not_cutoff.wav|3616647721
 voice/EU/fo_starting_engine_1.wav|933646316
 voice/EU/fo_starting_engine_2.wav|3843641461
 voice/EU/fo_starting_engine_3.wav|2626581941
@@ -764,6 +771,7 @@ voice/UK/fe_fire_engine_1.wav|1808849588
 voice/UK/fe_fire_engine_2.wav|2359002107
 voice/UK/fe_fire_engine_3.wav|3684728453
 voice/UK/fe_fire_engine_4.wav|3305180295
+voice/UK/fe_fire_handle_pulled.wav|3180045071
 voice/UK/fe_fire_wheel_well.wav|472481511
 voice/UK/fe_fuel_below_reserve.wav|2087130701
 voice/UK/fe_fuel_check.wav|2280263449
@@ -783,6 +791,7 @@ voice/UK/fe_not_in_reverse_1.wav|3742158538
 voice/UK/fe_not_in_reverse_2.wav|701019452
 voice/UK/fe_not_in_reverse_3.wav|386916417
 voice/UK/fe_not_in_reverse_4.wav|1434814856
+voice/UK/fe_oil_quantity_low.wav|714065521
 voice/UK/fe_press_auto_fail.wav|1472732782
 voice/UK/fe_reverse_n1.wav|2062321871
 voice/UK/fe_stabilized_forward_thrust.wav|1510445018
@@ -811,6 +820,7 @@ voice/UK/fo_flaps_10_set.wav|2745454875
 voice/UK/fo_flaps_10_speed.wav|2940616474
 voice/UK/fo_flaps_20_set.wav|765035979
 voice/UK/fo_flaps_5_speed.wav|3704052269
+voice/UK/fo_flaps_not_set_for_takeoff.wav|3165982992
 voice/UK/fo_flaps_up_speed.wav|2254198638
 voice/UK/fo_flight_directors_still_off.wav|3967780259
 voice/UK/fo_fuel_on_lever.wav|884493279
@@ -818,6 +828,7 @@ voice/UK/fo_full_back.wav|2153953011
 voice/UK/fo_full_forward.wav|2088127585
 voice/UK/fo_full_left.wav|2691963435
 voice/UK/fo_full_right.wav|3268298549
+voice/UK/fo_gear_lever_not_down.wav|3117103163
 voice/UK/fo_greeting_afternoon.wav|2009170422
 voice/UK/fo_greeting_evening.wav|2099742413
 voice/UK/fo_greeting_morning.wav|1609703563
@@ -828,11 +839,13 @@ voice/UK/fo_icing_conditions.wav|187680877
 voice/UK/fo_light_off.wav|3974613854
 voice/UK/fo_mcp_altitude_set.wav|1642134368
 voice/UK/fo_minimums.wav|1728992367
+voice/UK/fo_n2_rising.wav|823579424
 voice/UK/fo_neutral.wav|2597775326
 voice/UK/fo_no_questions.wav|933286055
 voice/UK/fo_off_track.wav|2670058309
 voice/UK/fo_one_thousand.wav|791477718
 voice/UK/fo_one_thousand_to_go.wav|2237501216
+voice/UK/fo_parking_brake_not_set.wav|1193951006
 voice/UK/fo_positive_rate.wav|2279772424
 voice/UK/fo_ready_for_before_start.wav|2414907521
 voice/UK/fo_ready_for_descent.wav|3441991279
@@ -844,6 +857,7 @@ voice/UK/fo_rotate.wav|2724820839
 voice/UK/fo_rudder_left.wav|400964389
 voice/UK/fo_rudder_neutral.wav|3404648788
 voice/UK/fo_rudder_right.wav|4233912689
+voice/UK/fo_start_levers_not_cutoff.wav|3254048649
 voice/UK/fo_starting_engine_1.wav|968283485
 voice/UK/fo_starting_engine_2.wav|1935412989
 voice/UK/fo_starting_engine_3.wav|226102341
@@ -1361,6 +1375,7 @@ voice/US/fe_fire_engine_1.wav|213460900
 voice/US/fe_fire_engine_2.wav|2981690614
 voice/US/fe_fire_engine_3.wav|4294577766
 voice/US/fe_fire_engine_4.wav|1412963725
+voice/US/fe_fire_handle_pulled.wav|90853853
 voice/US/fe_fire_wheel_well.wav|4116406174
 voice/US/fe_fuel_below_reserve.wav|212263653
 voice/US/fe_fuel_check.wav|877128153
@@ -1380,6 +1395,7 @@ voice/US/fe_not_in_reverse_1.wav|3151558545
 voice/US/fe_not_in_reverse_2.wav|3202995413
 voice/US/fe_not_in_reverse_3.wav|4265565290
 voice/US/fe_not_in_reverse_4.wav|2038079150
+voice/US/fe_oil_quantity_low.wav|2281753930
 voice/US/fe_press_auto_fail.wav|2577142510
 voice/US/fe_reverse_n1.wav|2278196588
 voice/US/fe_stabilized_forward_thrust.wav|3615505198
@@ -1408,6 +1424,7 @@ voice/US/fo_flaps_10_set.wav|386827234
 voice/US/fo_flaps_10_speed.wav|3191119747
 voice/US/fo_flaps_20_set.wav|780925612
 voice/US/fo_flaps_5_speed.wav|2047675726
+voice/US/fo_flaps_not_set_for_takeoff.wav|189242269
 voice/US/fo_flaps_up_speed.wav|779551140
 voice/US/fo_flight_directors_still_off.wav|1979889670
 voice/US/fo_fuel_on_lever.wav|1931868135
@@ -1415,6 +1432,7 @@ voice/US/fo_full_back.wav|4272730976
 voice/US/fo_full_forward.wav|3181204590
 voice/US/fo_full_left.wav|898646107
 voice/US/fo_full_right.wav|3119166918
+voice/US/fo_gear_lever_not_down.wav|4149129911
 voice/US/fo_greeting_afternoon.wav|2007703015
 voice/US/fo_greeting_evening.wav|3604802555
 voice/US/fo_greeting_morning.wav|2672542414
@@ -1425,11 +1443,13 @@ voice/US/fo_icing_conditions.wav|3078480420
 voice/US/fo_light_off.wav|2406758585
 voice/US/fo_mcp_altitude_set.wav|1739118992
 voice/US/fo_minimums.wav|2337623801
+voice/US/fo_n2_rising.wav|2947808018
 voice/US/fo_neutral.wav|4207252925
 voice/US/fo_no_questions.wav|1212353560
 voice/US/fo_off_track.wav|113375924
 voice/US/fo_one_thousand.wav|3413843664
 voice/US/fo_one_thousand_to_go.wav|2656102867
+voice/US/fo_parking_brake_not_set.wav|3739696180
 voice/US/fo_positive_rate.wav|3542641058
 voice/US/fo_ready_for_before_start.wav|4057728270
 voice/US/fo_ready_for_descent.wav|1459905373
@@ -1441,6 +1461,7 @@ voice/US/fo_rotate.wav|4242343824
 voice/US/fo_rudder_left.wav|1533193826
 voice/US/fo_rudder_neutral.wav|1863213962
 voice/US/fo_rudder_right.wav|2365589273
+voice/US/fo_start_levers_not_cutoff.wav|2469986912
 voice/US/fo_starting_engine_1.wav|4089075889
 voice/US/fo_starting_engine_2.wav|1765344015
 voice/US/fo_starting_engine_3.wav|391172551
@@ -1693,7 +1714,7 @@ voice/US/resp_cp_down_and_checked.wav|3839277784
 voice/US/resp_cp_fastened.wav|2651261887
 voice/US/resp_cp_free_indicators_checked.wav|829916727
 voice/US/resp_cp_green_light.wav|1184651874
-voice/US/resp_cp_normal.wav|3075218975
+voice/US/resp_cp_normal.wav|2864938967
 voice/US/resp_cp_off.wav|1867456917
 voice/US/resp_cp_off_2.wav|3968641738
 voice/US/resp_cp_on.wav|2183933081
