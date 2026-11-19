@@ -1,4 +1,11 @@
-﻿0.9.286
+﻿0.9.288
+- Changed: Pack 2 stays in automatic for the whole flight. The crew no longer shut it down in the cruise
+- Added: Choose an INS or HDG departure in the takeoff calculator. The first officer sets the autopilot to it as you line up
+- Changed: In Optimum mode the Profile page shows the next step climb and roughly when, instead of "None planned"
+- Changed: The cruise pause, the pause at fuel and time compression have moved from the Performance page to the Profile page. With a pause armed, the Flight page shows it in one line
+- Fixed: The centre tank scavenge pump was switched off a second after it started, leaving fuel stranded in the centre tank
+
+0.9.286
 - Fixed: The automatic climb could hold a climb rate the aircraft could not sustain. On a heavy departure the speed schedule gave up after five minutes if the flaps were not yet up, then flew a fixed climb rate towards 250 knots for the rest of the climb
     - It no longer gives up on a clock, and it lets the speed rise past 250 while the last flaps are still coming up, as they need
     - If it does fall back to a plain climb rate, it aims for the right speed for the altitude and returns to speed hold once the aircraft is there, including when you hand the climb back to the crew
