@@ -1,4 +1,19 @@
-﻿0.9.289
+﻿0.9.290
+- Changed: The Performance page is two pages, Takeoff and Landing. Tap Performance and it opens the one for where you are; the choice beside the button switches. Each shows its briefing as the captain will read it
+- Added: Performance still to do shows in red - takeoff performance once you are taxiing, and from the top of descent call the arrival altimeter, transition level and minimums. On the Flight page too, with a button to the page
+- Added: Minimums not set is an open item in the cruise
+- Added: The first time the plugin runs after an update, the Flight page says what is new
+- Added: After a Felis update, the Flight page reminds you to re-enable the EFB and reload the aircraft and its art from the Developer menu
+- Added: "Speedbrakes up" and "Reversers normal" from the engineer on the landing roll
+- Changed: At the gate the first officer says "Shutting down engines" and closes the fuel control switches one engine at a time, two seconds apart
+- Added: Start a new flight from Flight complete, for when you secured instead of turning round
+- Changed: The approach runway card is put away once you have landed
+- Changed: Once the Before Landing checklist is done and you are below 10,000 ft, the phase reads Landing
+- Changed: Cruise Mach is on the Profile page
+- Changed: The approach briefing names the runway in the plan when the ATIS does not settle it
+- Changed: The captain speaks a little quicker
+
+0.9.289
 - Added: The flight engineer balances the fuel. Tanks 2 and 3 more than 450 kg apart on tanks 2 & 3 to all engines: the low tank's crossfeed is closed until they are within 250 kg (FHB). On tank to engine, more than 500 kg apart: the high and low tanks' crossfeeds open, the others closed, the low tank's pumps off, until within 250 kg. Cruise only, never across a suspected leak
 - Fixed: A landing in any stage of the flight now runs the rollout, the after-landing flow and parking - even if Prepare for descent was never pressed or the Before Landing checklist was not done
 - Changed: Descending without pressing Prepare for descent, near the top of descent or below FL180, starts the crew's descent preparation
