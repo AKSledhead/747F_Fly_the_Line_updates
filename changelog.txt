@@ -1,4 +1,8 @@
-﻿0.9.295
+﻿0.9.296
+- Fixed: The plugin now appears in SkunkCrafts Updater. Load the freighter once with this version and it is listed from then on
+- Changed: Clearer, shorter descriptions on the panel's tooltips and in the manual
+
+0.9.295
 - Changed: Below 10,000 ft the climb holds 250 knots more closely. The climb steepens as the speed comes up to 250, and if it passes 252 the autopilot flies V/S for a moment to bring it back, then hands it to IAS hold again
 - Changed: The takeoff calculator reads each line of the handbook's takeoff chart to where the chart ends it, so Rating I and Rating II can be offered at sea-level airports on a mild day, and hot-day limits at low airports follow the chart line for line
 - Changed: When Find lowest safe thrust settles on full thrust, it says what ruled out Rating II and Rating I, each in its own words
