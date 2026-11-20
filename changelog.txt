@@ -1,4 +1,12 @@
-﻿0.9.290
+﻿0.9.292
+- Added: When a checklist item does not check out, its crew member says "Standby" instead of waiting in silence, and answers as usual once it does
+- Added: "Altimeters don't agree" on the altimeter checklist items
+- Added: The first officer sets all three altimeters to the field's QNH in the preflight
+- Added: "Watch your speed" from the first officer when taxiing faster than 28 knots
+- Added: The first officer sets the takeoff trim from the calculator once the engines are stable, and says "Takeoff trim set". Calculate again in the taxi and he sets the new figure
+- Changed: INS or HDG departure is chosen in the takeoff settings on Performance > Takeoff, not in the calculator
+
+0.9.290
 - Changed: The Performance page is two pages, Takeoff and Landing. Tap Performance and it opens the one for where you are; the choice beside the button switches. Each shows its briefing as the captain will read it
 - Added: Performance still to do shows in red - takeoff performance once you are taxiing, and from the top of descent call the arrival altimeter, transition level and minimums. On the Flight page too, with a button to the page
 - Added: Minimums not set is an open item in the cruise

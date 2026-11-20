@@ -1,7 +1,7 @@
-64/lin.xpl|1820841158
-64/mac.xpl|1571657289
-64/win.xpl|2507799966
-changelog.txt|1297897618
+64/lin.xpl|2043670740
+64/mac.xpl|108810940
+64/win.xpl|3904700841
+changelog.txt|3445449111
 THIRD_PARTY_NOTICES.txt|782793607
 voice/EU/al_antiskid_ground_test_call.wav|2313869093
 voice/EU/al_apu_call.wav|443434694
@@ -152,6 +152,7 @@ voice/EU/desc_wing_logo_lights_call.wav|3924923923
 voice/EU/descent_started.wav|3267124603
 voice/EU/established_cruise.wav|2494403519
 voice/EU/fe_all_engines_stabilized.wav|99735507
+voice/EU/fe_altimeters_disagree.wav|1027229457
 voice/EU/fe_approaching_tod.wav|1111308041
 voice/EU/fe_apu_inoperative.wav|3058209451
 voice/EU/fe_apu_wont_start.wav|1851355283
@@ -200,6 +201,7 @@ voice/EU/fe_step_climb_starting.wav|1367712331
 voice/EU/fe_step_climb_yours.wav|936354668
 voice/EU/fe_takeoff_thrust_set.wav|22824039
 voice/EU/fe_thrust_stabilized.wav|3399183527
+voice/EU/fo_altimeters_disagree.wav|922121822
 voice/EU/fo_antiskid_inop.wav|3293949452
 voice/EU/fo_atc_cleared.wav|3327342375
 voice/EU/fo_atc_request.wav|436987392
@@ -262,6 +264,7 @@ voice/EU/fo_starting_engine_1.wav|933646316
 voice/EU/fo_starting_engine_2.wav|3843641461
 voice/EU/fo_starting_engine_3.wav|2626581941
 voice/EU/fo_starting_engine_4.wav|3337884935
+voice/EU/fo_takeoff_trim_set.wav|3888257297
 voice/EU/fo_transition_altitude.wav|814274279
 voice/EU/fo_transition_level.wav|1623380354
 voice/EU/fo_trim_not_set.wav|2491651503
@@ -547,6 +550,7 @@ voice/EU/resp_fe_out_2.wav|3039233989
 voice/EU/resp_fe_set.wav|1877251104
 voice/EU/resp_fe_set_2.wav|4268920534
 voice/EU/resp_fe_set_sufficient_for_flight.wav|3707960644
+voice/EU/resp_fe_standby.wav|1764310968
 voice/EU/resp_fe_stop.wav|1178808230
 voice/EU/resp_fe_test.wav|2067479555
 voice/EU/resp_fo_arm.wav|324054012
@@ -760,6 +764,7 @@ voice/UK/desc_wing_logo_lights_call.wav|1886199982
 voice/UK/descent_started.wav|4261399314
 voice/UK/established_cruise.wav|1286371744
 voice/UK/fe_all_engines_stabilized.wav|2133437060
+voice/UK/fe_altimeters_disagree.wav|551088266
 voice/UK/fe_approaching_tod.wav|1787509780
 voice/UK/fe_apu_inoperative.wav|3566954103
 voice/UK/fe_apu_wont_start.wav|761474477
@@ -808,6 +813,7 @@ voice/UK/fe_step_climb_starting.wav|1282197569
 voice/UK/fe_step_climb_yours.wav|2246113325
 voice/UK/fe_takeoff_thrust_set.wav|3922342770
 voice/UK/fe_thrust_stabilized.wav|1569506943
+voice/UK/fo_altimeters_disagree.wav|298737919
 voice/UK/fo_antiskid_inop.wav|12330251
 voice/UK/fo_atc_cleared.wav|1065675806
 voice/UK/fo_atc_request.wav|2078696181
@@ -870,6 +876,7 @@ voice/UK/fo_starting_engine_1.wav|968283485
 voice/UK/fo_starting_engine_2.wav|1935412989
 voice/UK/fo_starting_engine_3.wav|226102341
 voice/UK/fo_starting_engine_4.wav|2104731527
+voice/UK/fo_takeoff_trim_set.wav|1930108637
 voice/UK/fo_transition_altitude.wav|2349857576
 voice/UK/fo_transition_level.wav|2912024858
 voice/UK/fo_trim_not_set.wav|1809041301
@@ -1155,6 +1162,7 @@ voice/UK/resp_fe_out_2.wav|2200093325
 voice/UK/resp_fe_set.wav|1307414350
 voice/UK/resp_fe_set_2.wav|1720607684
 voice/UK/resp_fe_set_sufficient_for_flight.wav|892160273
+voice/UK/resp_fe_standby.wav|1680048412
 voice/UK/resp_fe_stop.wav|3998174611
 voice/UK/resp_fe_test.wav|1393616267
 voice/UK/resp_fo_arm.wav|4023850275
@@ -1368,6 +1376,7 @@ voice/US/desc_wing_logo_lights_call.wav|4283269825
 voice/US/descent_started.wav|686227822
 voice/US/established_cruise.wav|3527871063
 voice/US/fe_all_engines_stabilized.wav|3293327296
+voice/US/fe_altimeters_disagree.wav|3323629732
 voice/US/fe_approaching_tod.wav|3372487977
 voice/US/fe_apu_inoperative.wav|174369977
 voice/US/fe_apu_wont_start.wav|399038851
@@ -1416,6 +1425,7 @@ voice/US/fe_step_climb_starting.wav|3675118286
 voice/US/fe_step_climb_yours.wav|2313743364
 voice/US/fe_takeoff_thrust_set.wav|922190046
 voice/US/fe_thrust_stabilized.wav|2699913345
+voice/US/fo_altimeters_disagree.wav|1902424486
 voice/US/fo_antiskid_inop.wav|1758208938
 voice/US/fo_atc_cleared.wav|4277535662
 voice/US/fo_atc_request.wav|3501687538
@@ -1478,6 +1488,7 @@ voice/US/fo_starting_engine_1.wav|4089075889
 voice/US/fo_starting_engine_2.wav|1765344015
 voice/US/fo_starting_engine_3.wav|391172551
 voice/US/fo_starting_engine_4.wav|2988804257
+voice/US/fo_takeoff_trim_set.wav|1627506331
 voice/US/fo_transition_altitude.wav|3422389909
 voice/US/fo_transition_level.wav|3716529895
 voice/US/fo_trim_not_set.wav|3030008001
@@ -1763,6 +1774,7 @@ voice/US/resp_fe_out_2.wav|3619838715
 voice/US/resp_fe_set.wav|3960935835
 voice/US/resp_fe_set_2.wav|2408850609
 voice/US/resp_fe_set_sufficient_for_flight.wav|3677403209
+voice/US/resp_fe_standby.wav|436720110
 voice/US/resp_fe_stop.wav|3758112664
 voice/US/resp_fe_test.wav|1713361742
 voice/US/resp_fo_arm.wav|1282729966
