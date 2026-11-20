@@ -1,4 +1,25 @@
-﻿0.9.292
+﻿0.9.294
+- Changed: The crew's voices are one file per accent, voice\<accent>\lines.pak, about a quarter of the size of the old WAV files - a much faster download and update. The old .wav files left in the voice folders are no longer used and can be deleted
+- Changed: When the destination's ATIS lists several landing runways and none can be called yours, the approach briefing shows the runways in use
+- Changed: The Weather page refreshes the METARs, TAFs and ATIS when you open it, and Refresh now fetches the ATIS too
+- Changed: "Autobrakes - Set" on the Descent checklist is answered only when the selector is at the autobrake chosen on the Landing page, and the item shows the selector's position
+- Added: Change the autobrake on the Landing page during the arrival and the first officer turns the selector to match
+- Added: On the approach the first officer calls "Speed checks, flaps one" (five, ten, twenty, twenty-five, thirty) as you select each flap setting, or "Watch your speed" if you are over its placard limit, and the captain calls "Gear down"
+- Added: VREF and the target speed on the Flight page's step card in the descent and approach. The target is worked out by the FHB: VREF, plus 5 for flaps 25, plus half the steady headwind and the full gust from the destination's weather, at least 5 and at most 20 knots. The Landing page and the approach briefing show it too
+- Added: At the gate, choose how to leave the aeroplane: Secure on the APU, Secure on ground power, or Full shutdown, with Turnaround beside them. On the APU or ground power the electrics are set so the main deck cargo handling bus is powered and the cargo doors work; Full shutdown goes cold and dark
+- Added: The first officer switches the INS off three minutes after block-in
+- Added: Cold and dark from Flight complete, if the aeroplane was secured on the APU or ground power
+- Fixed: Ground power at the start of a flight selects EXT PWR 1 to CLOSE first time
+- Changed: At the gate the panel shows the engines spooling down, with the highest N2 counting down to 5%, as in progress rather than as something you are waiting on
+- Changed: The approach briefing's VREF is the flaps 30 VREF; the flaps 25 additive is in the target speed
+- Added: "Localizer alive" and "Glideslope alive" from the first officer as the ILS needles come off their stops
+- Changed: The altitude window is yours alone. The Cleared altitude box is gone from the Takeoff settings, and the crew climb to whatever the window shows without ever setting it
+- Changed: The landing lights go off climbing through 10,000 ft and come on descending through 10,000 ft. The wing lights now go off at 18,000 and come on below it, as the logo light does at night
+
+0.9.293
+- Fixed: On reaching the cleared altitude or the top of a step climb, ALT HOLD is selected once the aeroplane is level at the altitude, not as the capture begins
+
+0.9.292
 - Added: When a checklist item does not check out, its crew member says "Standby" instead of waiting in silence, and answers as usual once it does
 - Added: "Altimeters don't agree" on the altimeter checklist items
 - Added: The first officer sets all three altimeters to the field's QNH in the preflight

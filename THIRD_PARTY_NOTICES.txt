@@ -11,7 +11,7 @@ distributed here.
 Contents
 --------
   1. Dear ImGui 1.92.9b          - MIT
-  2. stb (stb_image)             - MIT or public domain, at your option
+  2. stb (stb_image, stb_vorbis) - MIT or public domain, at your option
   3. nlohmann/json 3.11.3        - MIT
   4. Inter                       - SIL Open Font License 1.1
   5. miniaudio 0.11.25           - public domain (Unlicense) or MIT-0
@@ -45,7 +45,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ==============================================================================
-2. stb (stb_image)
+2. stb (stb_image, and stb_vorbis 1.24 for the crew's voices)
    https://github.com/nothings/stb
 ==============================================================================
 
