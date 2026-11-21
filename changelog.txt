@@ -1,4 +1,15 @@
-﻿0.9.299
+﻿0.9.300
+- Changed: The flight engineer starts his preflight with "Okay, setting up back here"
+- Changed: The takeoff and approach briefing items on the checklists wait until the captain has finished the briefing
+- Changed: A new fuel load before takeoff - weight and balance redone, or a refuel - has the flight engineer set the fuel panel for it again
+- Changed: At Ready for pushback the flight engineer checks the fuel panel against the fuel load and sets anything that is not right for the start
+- Changed: The first officer arms the takeoff autobrake in his taxi flow, before the Taxi checklist asks for it
+- Added: The takeoff calculator gives the green band select position with the trim, from the shading of the handbook's trim chart. The first officer sets the switch, and the After Starting Engines checklist's trim item checks it
+- Changed: After takeoff, the button at the foot of the page calls the After Takeoff checklist, as it does for the other checklists
+- Changed: The Flight page says "Pause armed" with where the pause is set, under the step card, on the ground and in the air. The turbulence line moved up beside it
+- Added: Set takeoff trim on the Flight page, from engine start to the takeoff roll, whenever the stabiliser is not at the takeoff trim from the calculator
+
+0.9.299
 - Changed: Powering up on the APU or ground power leaves the electrics set so the nose and side cargo doors work at the gate. When you call for the before-start checklist the flight engineer checks both doors are shut, says so if one is open, and then switches to normal power
 - Changed: The power question has two answers, Ground power and APU power. On ground power, Transfer to APU power is there whenever you want the APU
 - Changed: Going back to an earlier phase from the phase list leaves an INS already in NAV where it is, instead of starting the alignment again
