@@ -1,4 +1,7 @@
-﻿0.9.300
+﻿0.9.301
+- Changed: Turbulence is called only when the bumps keep coming - six in a minute for moderate, three for severe - and not in the minute after a level-off or a step climb, when the autopilot's own pitch changes were taken for bumps
+
+0.9.300
 - Changed: The flight engineer starts his preflight with "Okay, setting up back here"
 - Changed: The takeoff and approach briefing items on the checklists wait until the captain has finished the briefing
 - Changed: A new fuel load before takeoff - weight and balance redone, or a refuel - has the flight engineer set the fuel panel for it again
