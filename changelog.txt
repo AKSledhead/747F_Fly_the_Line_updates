@@ -1,4 +1,24 @@
-﻿0.9.297
+﻿0.9.299
+- Changed: Powering up on the APU or ground power leaves the electrics set so the nose and side cargo doors work at the gate. When you call for the before-start checklist the flight engineer checks both doors are shut, says so if one is open, and then switches to normal power
+- Changed: The power question has two answers, Ground power and APU power. On ground power, Transfer to APU power is there whenever you want the APU
+- Changed: Going back to an earlier phase from the phase list leaves an INS already in NAV where it is, instead of starting the alignment again
+- Added: Moderate and severe turbulence, from either X-Plane's turbulence or X-ProTurb. The engineer selects FLIGHT START/CONT. In the cruise the first officer slows to the turbulence penetration speed - 300 kt or M.83 in moderate, 290 kt or M.82 in severe, whichever is lower - and goes back to the cruise Mach after three minutes of smooth air. In the climb and descent the Flight page shows the speed to fly; 250 kt below 15,000 ft in the descent at or under maximum landing weight. Time compression goes to 1x and automatic step climbs wait
+- Added: If the aeroplane passes 60 degrees of bank, or 6,000 fpm up or down, for two seconds, the sim pauses and the log says why
+- Changed: Ice protection takes "in cloud" from ice actually starting to form, not from the cloud layers' heights, and counts low visibility as fog only on the ground or below 500 ft
+- Changed: "Speed checks, flaps" is called half a second after the flap handle stops, as the flaps start to move
+- Changed: The runway turnoff lights come on with the landing lights at 10,000 ft in the descent
+- Changed: Engine anti-ice goes off after landing, whatever the weather, and stays off for the taxi to parking
+- Added: On another page, the Flight icon turns green with a pulsing dot when the Flight page needs you - a checklist to call, a question to answer, a step to press
+- Changed: Cold and dark stays on screen while the engineer finishes securing the aeroplane, greyed out until he is done
+- Changed: The captain's briefings run quicker through the figures - about a quarter faster
+- Changed: The panel clock, the log times and the crew's last-callouts times show the minutes
+- Changed: With auto step climbs off, the Profile page's next climb reads "No climbs"
+- Added: After you change the sim rate yourself in the cruise, Resume time compression under the step card goes back to the rate set on the Profile page
+- Changed: In the flight control check, "Free, indicators checked" waits until the first officer has finished calling "Rudder neutral"
+- Changed: The takeoff calculator and the takeoff briefing read the wind at the aeroplane, the same wind the sim's weather shows
+- Changed: New crew wording: "Firing up the A-P-U", "Okay, ground power coming on", and relaxed lines from the first officer and engineer as they start and finish their preflight
+
+0.9.297
 - Changed: Level at an altitude short of the cruise, the crew hold the climb speed and climb again when you set a higher altitude. The cruise setup waits for the cruising level - the plan's, or FL200 and up without one - and a level held ten minutes at FL250 or above is taken as the cruise
 - Changed: Takeoff calculator: maximum N1 and VMCG are the handbook's own tables, with VMCG for each rating; a contaminated runway gets the handbook's V1 reduction and V1(MCG) limit weight; engine anti-ice takes its correction off the limit weights below 10 C, and 0.6% off the takeoff N1 in the anti-ice chart's Zone B
 - Changed: An engine start that stalls, runs hot or does not light off is stopped as the FHB says - start lever to CUTOFF and the starter kept engaged for 30 seconds
