@@ -1,4 +1,29 @@
-﻿0.9.296
+﻿0.9.297
+- Changed: Level at an altitude short of the cruise, the crew hold the climb speed and climb again when you set a higher altitude. The cruise setup waits for the cruising level - the plan's, or FL200 and up without one - and a level held ten minutes at FL250 or above is taken as the cruise
+- Changed: Takeoff calculator: maximum N1 and VMCG are the handbook's own tables, with VMCG for each rating; a contaminated runway gets the handbook's V1 reduction and V1(MCG) limit weight; engine anti-ice takes its correction off the limit weights below 10 C, and 0.6% off the takeoff N1 in the anti-ice chart's Zone B
+- Changed: An engine start that stalls, runs hot or does not light off is stopped as the FHB says - start lever to CUTOFF and the starter kept engaged for 30 seconds
+- Changed: An engine fire opens the QRH set to that engine, and main deck smoke is watched
+- Changed: QRH flows move the pack valves where the procedure says pack valves; Engine Fuel Leak sets every main tank pump, the override pumps and all four crossfeeds; Loss of All Generators opens all four crossfeeds; Re-establishment of Stabilizer Trim puts one switch to NORM; CSD Oil Out trips the generator breaker first
+- Changed: After a divert, the top of descent, the fuel check, the arrival QNH, the landing elevation, the transition level and the off-track watch follow the divert airport, and a second divert re-arms the cruise pause
+- Changed: Time compression needs a top of descent or a cruise pause to stop before, and stops before a pause set to another airport or a Zulu time
+- Changed: Loading another aircraft, or a new airport on the ground, stands the crew down
+- Changed: Resume crew climb engages the climb modes and climb thrust again
+- Changed: The pressurisation FLT ALT follows a higher altitude window, and accelerating to cruise Mach stops 15 knots short of the speed limit
+- Changed: Warnings that need electrical power work in flight on the engine generators; equipment smoke and the pressurisation rate limit light are read from the cockpit lamps
+- Changed: Engine anti-ice stays off in the climb and cruise below -40 C SAT, as the FHB allows. In the descent it goes on at any temperature
+- Changed: Rating I and II, and N1 DECR, have their runway and climb limits read at the temperature the handbook's Normal Takeoff N1 table gives for their N1 at today's OAT, so a derate is offered on a mild day - Rating I at JFK at 14 C is read at about 36 C. The calculator has no assumed-temperature mode, as the aeroplane has none
+- Added: The takeoff result shows the initial climb N1 for 1,000 ft above the field at 200 knots, less 0.5% for each of engine and wing anti-ice
+- Added: The Landing page shows the go-around N1 for the arrival's pressure altitude and reported temperature, for the packs and engine anti-ice as they are set - plus 0.3% on one pack, 0.6% with packs off, and 0.6% less with engine anti-ice in Zone B
+- Changed: The takeoff climb limit reads every pressure-altitude line of the handbook's climb chart, -1,000 to 10,000 ft, each to where the chart ends it, and flaps 20 takes the chart's flap correction - 5 to 6% under flaps 10
+- Changed: Engine anti-ice in Zone B takes the handbook's Zone B penalty, 5,800 kg off the field limit weight and 4,200 kg off the climb limit weight, on top of the climb chart's anti-ice correction
+- Changed: Anti-skid is on for the whole flight, as the FHB has it - set in the preflight with the guard closed, "Checked and on" on the Before Start checklist, and left on after landing. If it is off once lined up, it shows on the Open Items card, and the first officer calls the anti-skid INOP light if it comes on with the engines running
+- Changed: The crew stay out of the passenger 747-200, and the panel says so
+- Changed: The gear handle goes to OFF once every gear light is out, however dim; the takeoff trim drive stops once the aeroplane is rolling; the reserve fuel valves wait for a readable gross weight; the scavenge pump turns off when the centre tank stops going down; the fuel leak watch and the hourly fuel check count flight time at any time compression
+- Changed: The crew's lines no longer cut a queued call short, and a settings file copied from Windows loads cleanly on a Mac or Linux
+- Changed: The manual is redesigned: easier to read and print, with current screenshots
+- Changed: When the crew are stood down in flight, the engineer says "You have the fuel panel"
+
+0.9.296
 - Fixed: The plugin now appears in SkunkCrafts Updater. Load the freighter once with this version and it is listed from then on
 - Changed: Clearer, shorter descriptions on the panel's tooltips and in the manual
 
