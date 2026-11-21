@@ -1,70 +1,61 @@
 # 747 Fly the Line — Freighter — updates
 
-The SkunkCrafts Updater depot for **747 Fly the Line**, a plugin that flies
-the First Officer and Flight Engineer of the Felis Boeing 747-200 in
-X-Plane 12.
+Updates for **747 Fly the Line**, a first officer and flight engineer for
+the Felis Boeing 747-200 freighter in X-Plane 12. SkunkCrafts Updater
+downloads them from here.
 
-**This depot is for the FREIGHTER, `747F_Felis`.** The Felis passenger
-747-200 is a separate aeroplane and will have its own build and its own
-depot; this one will not drive it. Nothing here is wired to the passenger
-airframe yet.
+**This is for the freighter, `747F_Felis`, only.** The Felis passenger
+747-200 is a separate aircraft and is not supported yet. It will have its
+own updates when it is.
 
-This repository holds released binaries only. It is not the source.
+This repository holds the released plugin only, not its source.
 
 ## Where it installs
 
-Inside the aircraft, not in `Resources/plugins`:
+In the freighter's own plugins folder, not in `Resources/plugins`:
 
 ```
-X-Plane 12/Aircraft/747F_Felis/plugins/747_Fly_the_Line/64/win.xpl
+X-Plane 12/Aircraft/747F_Felis/plugins/747_Fly_the_Line/
 ```
 
-That location is deliberate — X-Plane loads a plugin kept in an aircraft's
-own `plugins` folder only when that aircraft is loaded, so the plugin costs
-nothing in every other aeroplane.
+X-Plane then loads the plugin only when the freighter is loaded.
 
-**Never leave a second copy in `Resources/plugins`.** X-Plane does not
-de-duplicate plugins, so a stray global copy means the Felis loads both:
-two flight loops, two stage machines, doubled callouts. If anything happens
-twice, look for a second `.xpl` before anything else.
+**Do not put a second copy in `Resources/plugins`.** X-Plane would load
+both, and every callout and switch action would happen twice. If anything
+happens twice, look for a second copy first.
 
-## Disable similar add-ons
+## Turn off similar add-ons
 
-This plugin's first officer and flight engineer work their own panels: the
-fuel panel, the electrics, the pneumatics, the lights. **Any other add-on
-that does the same job must be disabled for the Felis**, or the two will
-fight over the same switches — one sets a crossfeed, the other sets it back.
+The first officer and flight engineer set their own panels: fuel,
+electrics, pneumatics and lights. **Turn off any other add-on that works
+the same switches**, such as fuel management scripts, XFirstOfficer, or
+another first officer or flight engineer add-on. Otherwise a switch the
+crew set can be moved back by the other add-on.
 
-That includes automatic fuel management scripts, XFirstOfficer, and any
-other first officer or flight engineer add-on for this aircraft.
+## Crew voices
 
-## The crew's voices
+The voices are included, in `voice/<accent>/`, and are updated with the
+plugin. Three accents: American (`US`), British (`UK`) and European
+(`EU`). Delete an accent's folder to take it off the list; the next update
+restores it.
 
-The voices ship in this depot, in `voice/<accent>/`, and the updater keeps
-them current along with the plugin. Three accents: `US`, `UK` and `EU`.
-Delete a folder you don't want and it disappears from the plugin's list;
-the next update puts it back.
+## After a Felis update
 
-## A Felis update will remove this plugin
+A Felis update usually replaces the whole aircraft folder, and the plugin
+is inside it. Install the plugin again afterwards. SkunkCrafts Updater
+does not list it until you do.
 
-Aircraft updates often replace the whole aircraft folder, and this plugin
-lives inside it. After updating the Felis you will need to reinstall, and
-SkunkCrafts will not see the add-on until you do — its `skunkcrafts_updater.cfg`
-is removed along with everything else.
+**Before updating the Felis, back up
+`747_Fly_the_Line/64/747_Fly_the_Line_settings.txt`.** It holds all your
+settings, and is the one file the updater cannot restore.
 
-**Back up `64/747_Fly_the_Line_settings.txt` before updating the aeroplane**,
-or every preference returns to its default. That one small file is the only
-thing the updater cannot give you back.
+## Your settings and log
 
-## Your own files are left alone
-
-`747_Fly_the_Line_settings.txt` and `747_Fly_the_Line.log` sit beside the
-`.xpl`. Neither is managed by the updater — both are named in
-`skunkcrafts_updater_blacklist.txt` so an update cannot overwrite your
-settings.
+`747_Fly_the_Line_settings.txt` and `747_Fly_the_Line.log` are in the `64`
+folder. Updates never change them.
 
 ## Platforms
 
-Windows is developed and flown on. macOS and Linux are built by CI.
+Windows, macOS and Linux. Most testing is on Windows.
 
-Anything in this repo at a `0.9.x` version is pre-release.
+Versions numbered `0.9.x` are pre-release.
