@@ -1,4 +1,14 @@
-﻿0.9.302
+﻿0.9.303
+- Added: On the climb out the first officer names each flap setting as he raises the flaps - "Flaps ten", "Flaps five", "Flaps one", "Flaps up" - and on a go-around clean-up
+- Changed: The After Takeoff checklist button shows at the foot of the Flight page from liftoff
+- Changed: Before the cruise, the Profile page's next climb reads "Calculated at cruise"
+- Changed: The Log page's filters search the whole flight, so ATC shows every radio call
+- Changed: The radio log waits for the controller's reply to each call before moving on
+- Changed: The log says when the SayIntentions link is lost and when it is back
+- Changed: The fuel quantity checklist item shows the plan's takeoff fuel beside the fuel on board, and the log gives both if it holds
+- Changed: The Flight page's plan card labels the plan's takeoff fuel T/O FUEL
+
+0.9.302
 - Added: A Landing runway box on the Landing page, for an arrival with no ATIS. The approach briefing, the landing speeds and the approach runway card use it
 - Added: Manual entry on the Weather page's departure and arrival cards: wind, temperature, altimeter and runway, used in place of the report and the ATIS for that airport until cleared
 - Changed: The Performance pages apply each number as soon as you finish entering it. The Apply buttons are gone
