@@ -1,38 +1,49 @@
-﻿0.9.301
-- Changed: Turbulence is called only when the bumps keep coming - six in a minute for moderate, three for severe - and not in the minute after a level-off or a step climb, when the autopilot's own pitch changes were taken for bumps
+﻿0.9.302
+- Added: A Landing runway box on the Landing page, for an arrival with no ATIS. The approach briefing, the landing speeds and the approach runway card use it
+- Added: Manual entry on the Weather page's departure and arrival cards: wind, temperature, altimeter and runway, used in place of the report and the ATIS for that airport until cleared
+- Changed: The Performance pages apply each number as soon as you finish entering it. The Apply buttons are gone
+- Changed: Once the takeoff calculator has a result, changing a number in it calculates again
+- Changed: The first officer turns the runway turnoff lights on when the gear goes down
+- Changed: Cold and dark switches standby power off before the battery
+- Changed: The line under the step card pulses green while the crew are working on their own, such as cooling the APU before shutdown
+
+0.9.301
+- Changed: Turbulence is called only when the bumps keep coming - six in a minute for moderate, three for severe - and not in the minute after a level-off or a step climb
 
 0.9.300
+- Added: The takeoff calculator gives the green band select position with the trim, from the shading of the handbook's trim chart. The first officer sets the switch, and the After Starting Engines checklist's trim item checks it
+- Added: Set takeoff trim on the Flight page, from engine start to the takeoff roll, whenever the stabiliser is not at the takeoff trim from the calculator
 - Changed: The flight engineer starts his preflight with "Okay, setting up back here"
 - Changed: The takeoff and approach briefing items on the checklists wait until the captain has finished the briefing
 - Changed: A new fuel load before takeoff - weight and balance redone, or a refuel - has the flight engineer set the fuel panel for it again
 - Changed: At Ready for pushback the flight engineer checks the fuel panel against the fuel load and sets anything that is not right for the start
 - Changed: The first officer arms the takeoff autobrake in his taxi flow, before the Taxi checklist asks for it
-- Added: The takeoff calculator gives the green band select position with the trim, from the shading of the handbook's trim chart. The first officer sets the switch, and the After Starting Engines checklist's trim item checks it
 - Changed: After takeoff, the button at the foot of the page calls the After Takeoff checklist, as it does for the other checklists
 - Changed: The Flight page says "Pause armed" with where the pause is set, under the step card, on the ground and in the air. The turbulence line moved up beside it
-- Added: Set takeoff trim on the Flight page, from engine start to the takeoff roll, whenever the stabiliser is not at the takeoff trim from the calculator
 
 0.9.299
-- Changed: Powering up on the APU or ground power leaves the electrics set so the nose and side cargo doors work at the gate. When you call for the before-start checklist the flight engineer checks both doors are shut, says so if one is open, and then switches to normal power
-- Changed: The power question has two answers, Ground power and APU power. On ground power, Transfer to APU power is there whenever you want the APU
-- Changed: Going back to an earlier phase from the phase list leaves an INS already in NAV where it is, instead of starting the alignment again
 - Added: Moderate and severe turbulence, from either X-Plane's turbulence or X-ProTurb. The engineer selects FLIGHT START/CONT. In the cruise the first officer slows to the turbulence penetration speed - 300 kt or M.83 in moderate, 290 kt or M.82 in severe, whichever is lower - and goes back to the cruise Mach after three minutes of smooth air. In the climb and descent the Flight page shows the speed to fly; 250 kt below 15,000 ft in the descent at or under maximum landing weight. Time compression goes to 1x and automatic step climbs wait
 - Added: If the aeroplane passes 60 degrees of bank, or 6,000 fpm up or down, for two seconds, the sim pauses and the log says why
+- Added: On another page, the Flight icon turns green with a pulsing dot when the Flight page needs you - a checklist to call, a question to answer, a step to press
+- Added: After you change the sim rate yourself in the cruise, Resume time compression under the step card goes back to the rate set on the Profile page
+- Changed: Powering up on the APU or ground power leaves the electrics set so the nose and side cargo doors work at the gate. When you call for the before-start checklist the flight engineer checks both doors are shut, says so if one is open, and then switches to normal power
+- Changed: The power question has two answers, Ground power and APU power. On ground power, Transfer to APU power is there whenever you want the APU
+- Changed: Going back to an earlier phase from the phase list keeps an INS that is already in NAV
 - Changed: Ice protection takes "in cloud" from ice actually starting to form, not from the cloud layers' heights, and counts low visibility as fog only on the ground or below 500 ft
 - Changed: "Speed checks, flaps" is called half a second after the flap handle stops, as the flaps start to move
 - Changed: The runway turnoff lights come on with the landing lights at 10,000 ft in the descent
 - Changed: Engine anti-ice goes off after landing, whatever the weather, and stays off for the taxi to parking
-- Added: On another page, the Flight icon turns green with a pulsing dot when the Flight page needs you - a checklist to call, a question to answer, a step to press
 - Changed: Cold and dark stays on screen while the engineer finishes securing the aeroplane, greyed out until he is done
 - Changed: The captain's briefings run quicker through the figures - about a quarter faster
 - Changed: The panel clock, the log times and the crew's last-callouts times show the minutes
 - Changed: With auto step climbs off, the Profile page's next climb reads "No climbs"
-- Added: After you change the sim rate yourself in the cruise, Resume time compression under the step card goes back to the rate set on the Profile page
 - Changed: In the flight control check, "Free, indicators checked" waits until the first officer has finished calling "Rudder neutral"
 - Changed: The takeoff calculator and the takeoff briefing read the wind at the aeroplane, the same wind the sim's weather shows
 - Changed: New crew wording: "Firing up the A-P-U", "Okay, ground power coming on", and relaxed lines from the first officer and engineer as they start and finish their preflight
 
 0.9.297
+- Added: The takeoff result shows the initial climb N1 for 1,000 ft above the field at 200 knots, less 0.5% for each of engine and wing anti-ice
+- Added: The Landing page shows the go-around N1 for the arrival's pressure altitude and reported temperature, for the packs and engine anti-ice as they are set - plus 0.3% on one pack, 0.6% with packs off, and 0.6% less with engine anti-ice in Zone B
 - Changed: Level at an altitude short of the cruise, the crew hold the climb speed and climb again when you set a higher altitude. The cruise setup waits for the cruising level - the plan's, or FL200 and up without one - and a level held ten minutes at FL250 or above is taken as the cruise
 - Changed: Takeoff calculator: maximum N1 and VMCG are the handbook's own tables, with VMCG for each rating; a contaminated runway gets the handbook's V1 reduction and V1(MCG) limit weight; engine anti-ice takes its correction off the limit weights below 10 C, and 0.6% off the takeoff N1 in the anti-ice chart's Zone B
 - Changed: An engine start that stalls, runs hot or does not light off is stopped as the FHB says - start lever to CUTOFF and the starter kept engaged for 30 seconds
@@ -46,8 +57,6 @@
 - Changed: Warnings that need electrical power work in flight on the engine generators; equipment smoke and the pressurisation rate limit light are read from the cockpit lamps
 - Changed: Engine anti-ice stays off in the climb and cruise below -40 C SAT, as the FHB allows. In the descent it goes on at any temperature
 - Changed: Rating I and II, and N1 DECR, have their runway and climb limits read at the temperature the handbook's Normal Takeoff N1 table gives for their N1 at today's OAT, so a derate is offered on a mild day - Rating I at JFK at 14 C is read at about 36 C. The calculator has no assumed-temperature mode, as the aeroplane has none
-- Added: The takeoff result shows the initial climb N1 for 1,000 ft above the field at 200 knots, less 0.5% for each of engine and wing anti-ice
-- Added: The Landing page shows the go-around N1 for the arrival's pressure altitude and reported temperature, for the packs and engine anti-ice as they are set - plus 0.3% on one pack, 0.6% with packs off, and 0.6% less with engine anti-ice in Zone B
 - Changed: The takeoff climb limit reads every pressure-altitude line of the handbook's climb chart, -1,000 to 10,000 ft, each to where the chart ends it, and flaps 20 takes the chart's flap correction - 5 to 6% under flaps 10
 - Changed: Engine anti-ice in Zone B takes the handbook's Zone B penalty, 5,800 kg off the field limit weight and 4,200 kg off the climb limit weight, on top of the climb chart's anti-ice correction
 - Changed: Anti-skid is on for the whole flight, as the FHB has it - set in the preflight with the guard closed, "Checked and on" on the Before Start checklist, and left on after landing. If it is off once lined up, it shows on the Open Items card, and the first officer calls the anti-skid INOP light if it comes on with the engines running
@@ -58,8 +67,8 @@
 - Changed: When the crew are stood down in flight, the engineer says "You have the fuel panel"
 
 0.9.296
-- Fixed: The plugin now appears in SkunkCrafts Updater. Load the freighter once with this version and it is listed from then on
 - Changed: Clearer, shorter descriptions on the panel's tooltips and in the manual
+- Fixed: The plugin now appears in SkunkCrafts Updater. Load the freighter once with this version and it is listed from then on
 
 0.9.295
 - Changed: Below 10,000 ft the climb holds 250 knots more closely. The climb steepens as the speed comes up to 250, and if it passes 252 the autopilot flies V/S for a moment to bring it back, then hands it to IAS hold again
@@ -67,22 +76,22 @@
 - Changed: When Find lowest safe thrust settles on full thrust, it says what ruled out Rating II and Rating I, each in its own words
 
 0.9.294
-- Changed: The crew's voices are one file per accent, voice\<accent>\lines.pak, about a quarter of the size of the old WAV files - a much faster download and update. The old .wav files left in the voice folders are no longer used and can be deleted
-- Changed: When the destination's ATIS lists several landing runways and none can be called yours, the approach briefing shows the runways in use
-- Changed: The Weather page refreshes the METARs, TAFs and ATIS when you open it, and Refresh now fetches the ATIS too
-- Changed: "Autobrakes - Set" on the Descent checklist is answered only when the selector is at the autobrake chosen on the Landing page, and the item shows the selector's position
 - Added: Change the autobrake on the Landing page during the arrival and the first officer turns the selector to match
 - Added: On the approach the first officer calls "Speed checks, flaps one" (five, ten, twenty, twenty-five, thirty) as you select each flap setting, or "Watch your speed" if you are over its placard limit, and the captain calls "Gear down"
 - Added: VREF and the target speed on the Flight page's step card in the descent and approach. The target is worked out by the FHB: VREF, plus 5 for flaps 25, plus half the steady headwind and the full gust from the destination's weather, at least 5 and at most 20 knots. The Landing page and the approach briefing show it too
 - Added: At the gate, choose how to leave the aeroplane: Secure on the APU, Secure on ground power, or Full shutdown, with Turnaround beside them. On the APU or ground power the electrics are set so the main deck cargo handling bus is powered and the cargo doors work; Full shutdown goes cold and dark
 - Added: The first officer switches the INS off three minutes after block-in
 - Added: Cold and dark from Flight complete, if the aeroplane was secured on the APU or ground power
-- Fixed: Ground power at the start of a flight selects EXT PWR 1 to CLOSE first time
+- Added: "Localizer alive" and "Glideslope alive" from the first officer as the ILS needles come off their stops
+- Changed: The crew's voices are one file per accent, voice\<accent>\lines.pak, about a quarter of the size of the old WAV files - a much faster download and update. The old .wav files left in the voice folders are no longer used and can be deleted
+- Changed: When the destination's ATIS lists several landing runways and none can be called yours, the approach briefing shows the runways in use
+- Changed: The Weather page refreshes the METARs, TAFs and ATIS when you open it, and Refresh now fetches the ATIS too
+- Changed: "Autobrakes - Set" on the Descent checklist is answered only when the selector is at the autobrake chosen on the Landing page, and the item shows the selector's position
 - Changed: At the gate the panel shows the engines spooling down, with the highest N2 counting down to 5%, as in progress rather than as something you are waiting on
 - Changed: The approach briefing's VREF is the flaps 30 VREF; the flaps 25 additive is in the target speed
-- Added: "Localizer alive" and "Glideslope alive" from the first officer as the ILS needles come off their stops
-- Changed: The altitude window is yours alone. The Cleared altitude box is gone from the Takeoff settings, and the crew climb to whatever the window shows without ever setting it
+- Changed: You set the altitude window; the crew never do. The Cleared altitude box is gone from the Takeoff settings, and the crew climb to whatever the window shows without ever setting it
 - Changed: The landing lights go off climbing through 10,000 ft and come on descending through 10,000 ft. The wing lights now go off at 18,000 and come on below it, as the logo light does at night
+- Fixed: Ground power at the start of a flight selects EXT PWR 1 to CLOSE first time
 
 0.9.293
 - Fixed: On reaching the cleared altitude or the top of a step climb, ALT HOLD is selected once the aeroplane is level at the altitude, not as the capture begins
@@ -96,81 +105,75 @@
 - Changed: INS or HDG departure is chosen in the takeoff settings on Performance > Takeoff, not in the calculator
 
 0.9.290
-- Changed: The Performance page is two pages, Takeoff and Landing. Tap Performance and it opens the one for where you are; the choice beside the button switches. Each shows its briefing as the captain will read it
 - Added: Performance still to do shows in red - takeoff performance once you are taxiing, and from the top of descent call the arrival altimeter, transition level and minimums. On the Flight page too, with a button to the page
 - Added: Minimums not set is an open item in the cruise
 - Added: The first time the plugin runs after an update, the Flight page says what is new
 - Added: After a Felis update, the Flight page reminds you to re-enable the EFB and reload the aircraft and its art from the Developer menu
 - Added: "Speedbrakes up" and "Reversers normal" from the engineer on the landing roll
-- Changed: At the gate the first officer says "Shutting down engines" and closes the fuel control switches one engine at a time, two seconds apart
 - Added: Start a new flight from Flight complete, for when you secured instead of turning round
-- Changed: The approach runway card is put away once you have landed
+- Changed: The Performance page is two pages, Takeoff and Landing. Tap Performance and it opens the one for where you are; the choice beside the button switches. Each shows its briefing as the captain will read it
+- Changed: At the gate the first officer says "Shutting down engines" and closes the fuel control switches one engine at a time, two seconds apart
+- Changed: The approach runway card is hidden once you have landed
 - Changed: Once the Before Landing checklist is done and you are below 10,000 ft, the phase reads Landing
 - Changed: Cruise Mach is on the Profile page
 - Changed: The approach briefing names the runway in the plan when the ATIS does not settle it
 - Changed: The captain speaks a little quicker
 
 0.9.289
-- Added: The flight engineer balances the fuel. Tanks 2 and 3 more than 450 kg apart on tanks 2 & 3 to all engines: the low tank's crossfeed is closed until they are within 250 kg (FHB). On tank to engine, more than 500 kg apart: the high and low tanks' crossfeeds open, the others closed, the low tank's pumps off, until within 250 kg. Cruise only, never across a suspected leak
-- Fixed: A landing in any stage of the flight now runs the rollout, the after-landing flow and parking - even if Prepare for descent was never pressed or the Before Landing checklist was not done
-- Changed: Descending without pressing Prepare for descent, near the top of descent or below FL180, starts the crew's descent preparation
-- Fixed: After a go-around the approach callouts are made again on the next approach, and only while descending
-- Changed: "Eighty knots" on the rollout is called on indicated airspeed
-- Added: "Parking brake is not set" on the Secure Cockpit checklist
 - Changed, to the Felis normal procedures:
-    - The autopilot goes in at 1,200 ft after takeoff, not 1,000
+
+- Added: The flight engineer balances the fuel. Tanks 2 and 3 more than 450 kg apart on tanks 2 & 3 to all engines: the low tank's crossfeed is closed until they are within 250 kg (FHB). On tank to engine, more than 500 kg apart: the high and low tanks' crossfeeds open, the others closed, the low tank's pumps off, until within 250 kg. Cruise only, never across a suspected leak
+- Added: "Parking brake is not set" on the Secure Cockpit checklist
+    - The autopilot engages at 1,200 ft after takeoff, not 1,000
     - One pack (pack 2) on the APU in the preflight, not three
     - The pressurization flight level scale is set to the cruising level plus 1,000 ft in the preflight, and follows each step climb
     - ALT HOLD is selected on levelling off after the climb and after each step climb
-    - Go-around: HDG on the nav mode selector, flaps brought up to 5 and CLB set; further clean-up is yours
+    - Go-around: HDG on the nav mode selector, flaps brought up to 5 and CLB set; you do the rest of the clean-up
+- Changed: Descending without pressing Prepare for descent, near the top of descent or below FL180, starts the crew's descent preparation
+- Changed: "Eighty knots" on the rollout is called on indicated airspeed
+- Fixed: A landing in any stage of the flight now runs the rollout, the after-landing flow and parking - even if Prepare for descent was never pressed or the Before Landing checklist was not done
+- Fixed: After a go-around the approach callouts are made again on the next approach, and only while descending
 - Removed: Fuel heat. The freighter has none
 
 0.9.288
-- Changed: Pack 2 stays in automatic for the whole flight. The crew no longer shut it down in the cruise
 - Added: Choose an INS or HDG departure in the takeoff calculator. The first officer sets the autopilot to it as you line up
+- Changed: Pack 2 stays in automatic for the whole flight. The crew no longer shut it down in the cruise
 - Changed: In Optimum mode the Profile page shows the next step climb and roughly when, instead of "None planned"
 - Changed: The cruise pause, the pause at fuel and time compression have moved from the Performance page to the Profile page. With a pause armed, the Flight page shows it in one line
 - Fixed: The centre tank scavenge pump was switched off a second after it started, leaving fuel stranded in the centre tank
 
 0.9.286
-- Fixed: The automatic climb could hold a climb rate the aircraft could not sustain. On a heavy departure the speed schedule gave up after five minutes if the flaps were not yet up, then flew a fixed climb rate towards 250 knots for the rest of the climb
-    - It no longer gives up on a clock, and it lets the speed rise past 250 while the last flaps are still coming up, as they need
-    - If it does fall back to a plain climb rate, it aims for the right speed for the altitude and returns to speed hold once the aircraft is there, including when you hand the climb back to the crew
-    - Climb rate changes are paced, come off quickly when speed is being lost, and are limited to 2,000 fpm above 10,000 ft and 1,500 above FL250. Every change is written to the log
 - Added: The first officer calls N2 rising as each engine starts to turn
 - Added: The takeoff calculator warns when the aircraft has not been loaded yet. With a flight plan loaded it compares the aircraft's weight with the plan's takeoff weight, under the Weight box and beside the speeds. Load with the aircraft's Fast Load or its load manager; either works
 - Added: The crew say so when a Before Starting Engines item is waiting on you: gear lever, parking brake, start levers, a pulled fire handle, or low engine oil
-- Changed: In their preflight the crew now set the switches the Before Starting Engines checklist asks about: pressurization mode to auto, outflow valves, equipment cooling and crew oxygen for the engineer; speed brake lever, flight control hydraulic power, autobrakes, stab trim cutout and flight directors for the first officer
 - Added: The first officer says so when the flaps are not at the planned takeoff setting after the crew have set them, and it is listed under open items
+- Changed: In their preflight the crew now set the switches the Before Starting Engines checklist asks about: pressurization mode to auto, outflow valves, equipment cooling and crew oxygen for the engineer; speed brake lever, flight control hydraulic power, autobrakes, stab trim cutout and flight directors for the first officer
 - Changed: Anti-skid is switched on and its guard closed at lineup
 - Changed: After takeoff the gear lever goes to off only once all the gear lights are out
 - Changed: The After Starting Engines checklist cannot be called until all four engines are stable
 - Changed: The Checklist page goes back to the top when a new checklist takes over
+- Fixed: The automatic climb could hold a climb rate the aircraft could not sustain. On a heavy departure the speed schedule gave up after five minutes if the flaps were not yet up, then flew a fixed climb rate towards 250 knots for the rest of the climb
+    - It no longer gives up on a clock, and it lets the speed rise past 250 while the last flaps are still coming up, as they need
+    - If it does fall back to a plain climb rate, it aims for the right speed for the altitude and returns to speed hold once the aircraft is there, including when you hand the climb back to the crew
+    - Climb rate changes are paced, come off quickly when speed is being lost, and are limited to 2,000 fpm above 10,000 ft and 1,500 above FL250. Every change is written to the log
 - Fixed: The Taxi checklist moved on from Flight controls before the control check was finished. It now waits for all three axes, rudder included, and each back to neutral
 - Fixed: Set takeoff trim was greyed out before engine start with nothing to say why
 
 0.9.282
+- Changed: The aircraft's own tablet is what you see first. Our panel starts hidden; the tab on the tablet's right edge shows it
+- Changed: The tab is hidden while the takeoff calculator, the flight plan, the checklist or the QRH is open on the tablet. Back closes them
 - Fixed: On a Mac, X-Plane crashed while the aircraft loaded. The plugin now draws the way X-Plane needs it to on macOS. The cockpit tablet stays switched off on macOS until it has been tested there; the panel is in its window
 - Fixed: In icing conditions at the gate, engine anti-ice was switched on and called before the engines were started. On the ground it now waits until all four are running
-- Changed: The aircraft's own tablet is what you see first. Our panel starts put away; the tab on the tablet's right edge brings it up
-- Changed: The tab is hidden while the takeoff calculator, the flight plan, the checklist or the QRH is open on the tablet. Back closes them
 
 0.9.280
 - Added: The panel is on the tablets in the cockpit - the captain's, the first officer's and the flight engineer's - and is worked there with the mouse. Nothing in the aircraft's files is changed
-    - The tab on the tablet's right edge puts the panel away, which gives the screen back to the aircraft's own pages and AviTab, and brings it back
+    - The tab on the tablet's right edge hides the panel, showing the aircraft's own pages and AviTab, and shows it again
     - The takeoff calculator, the flight plan, the checklist and the QRH slide in over the panel there instead of opening as windows
     - In an outside view, in VR, or with the tablets hidden, the panel is its ordinary window
     - Settings > Display > Show on the cockpit tablet, or the Plugins menu, turns it off
 - Changed: The takeoff calculator is laid out like the rest of the panel: the airport, the conditions, the aeroplane and the result, each in its own card
 
 0.9.275
-- Changed: The crew's voices are part of the plugin now, in its own voice folder, so the updater delivers them along with any new lines. Voices already in Resources\sounds\Felis B742F are still found; that folder can be deleted once this version is installed
-- Fixed: With the UK or European voices, some checklist answers switched to the American voice every other time
-- Changed: A new panel. The pages are down the left side - Flight, Checklist, Profile, Performance, QRH, Weather, Log, Settings - with the crew underneath
-    - A step card at the top of the Flight page says what the crew are waiting on you for, or what they are doing
-    - One action button at the foot of the page, with Skip beside it. It greys out and says what is under way once pressed
-    - A compact two-row view, and the whole panel tucks away to the edge of the screen
-    - Light and dark themes, and it follows the Display scale
 - Added: Flight progress on the Flight page: the plan's profile with the aeroplane on it, top of climb and top of descent, distance flown and to go
 - Added: Open items. Anything put off - a skipped checklist, speeds not calculated, the arrival altimeter not set - is listed when it starts to matter
 - Added: The QRH is a checklist you work through, not a page you read. Steps are ticked off, your place is kept, and a condition is a question you answer
@@ -181,19 +184,26 @@
 - Added: Name your crew, under their chips on the left
 - Added: The departure runway on the Flight page before takeoff, the approach runway after
 - Added: The crew know when the APU is inoperative, from the aircraft's own failures page. Only ground power is offered at the gate, the engineer says so, and at the arrival gate he calls for a ground cart before the engines are shut down
+- Changed: The crew's voices are part of the plugin now, in its own voice folder, so the updater delivers them along with any new lines. Voices already in Resources\sounds\Felis B742F are still found; that folder can be deleted once this version is installed
+- Changed: A new panel. The pages are down the left side - Flight, Checklist, Profile, Performance, QRH, Weather, Log, Settings - with the crew underneath
+    - A step card at the top of the Flight page says what the crew are waiting on you for, or what they are doing
+    - One action button at the foot of the page, with Skip beside it. It greys out and says what is under way once pressed
+    - A compact two-row view, and the whole panel can be hidden at the edge of the screen
+    - Light and dark themes, and it follows the Display scale
 - Changed: "GPU, then transfer to APU" brings ground power on and stops there. Transfer to APU power is its own button on the Flight page, for when you want the APU - usually a few minutes before pushback
 - Changed: The checklist page follows the item being called, and the captain answers the first officer's items
 - Changed: At the gate the phase reads Preflight until you begin, rather than Off
 - Changed: The cruise pause's Airport box shows the airport it is measuring from. Type another to override it; clear it to follow the plan
 - Changed: Standing the crew down hands you the fuel panel as well, and the engineer says so
 - Changed: The log starts fresh each time the aircraft is loaded
-- Removed: Ambient crew chatter, and the splash screen
+- Fixed: With the UK or European voices, some checklist answers switched to the American voice every other time
 - Fixed: Engines could be starved of fuel in the cruise with fuel still on board. The engineer now changes the feed before a tank an engine is drawing from runs low, sets the panel for landing, and checks the panel after each change
 - Fixed: The air conditioning packs could stay closed after takeoff
 - Fixed: Cleared onto runway, Prepare for descent and Shut down engines looked unpressed while the crew were acting on them
 - Fixed: Engine anti-ice switched on and off every thirty seconds in cloud
 - Fixed: The panel lost its size when X-Plane was minimised or resized, and windows could be left off screen
 - Fixed: The last flight's radio calls were written into the log again at the start of the next
+- Removed: Ambient crew chatter, and the splash screen
 
 0.9.226
 - Added: Takeoff and approach briefings. The captain reads them and the crew answer
@@ -204,13 +214,13 @@
     - Buttons on the Performance page too, to hear one again
     - The words are on screen while they're spoken, and anything the crew can't say aloud is written there instead
 - Added: UK, European and German/Dutch crew voices, alongside the American ones
-    - Pick yours under Settings > Crew. Only the accents you have installed are listed
+    - Choose one under Settings > Crew. Only the accents you have installed are listed
 - Changed: Settings are grouped by what they're about - Display, Crew, Automation - instead of by when in the flight they apply. Text size and the flight plan stay where they were
 - Fixed: The crew said nothing when asking ATC for a step climb - those three lines were missing from the voice pack
 - Fixed: The takeoff performance calculator could drive the stabiliser trim in aircraft other than the Felis
 
 0.9.221
-First numbered release. Everything below is what the plugin does today.
+First numbered release.
 
 - Added: A first officer and a flight engineer for the Felis 747-200 freighter. They run the flows and the callouts from the Felis handbooks, and only ever in that aircraft
 - Added: Normal checklists, called and answered by the crew, with the items checked against the real switches and the current item highlighted as you go
@@ -222,18 +232,18 @@ First numbered release. Everything below is what the plugin does today.
     - Assumed temperature derate, Rating I and Rating II, or no derate at all
     - V1, VR and V2, flap setting, thrust setting in EPR or N1
     - Field elevation, runway length, slope and wind filled in from X-Plane's own airport data and the live METAR
-- Added: Engine start, APU and electrical power run by the engineer, on your word
+- Added: Engine start, APU and electrical power run by the engineer when you ask
 - Added: Departure climb flown to a NADP profile, with the cleared altitude respected
 - Added: In the cruise, the engineer watches fuel against the plan every hour, calls the step climb when the aircraft has burned down to it, and calls top of descent
 - Added: The crew can ask SayIntentions ATC for the step climb and wait for the clearance before going up
 - Added: The first officer sets the altitude window from SayIntentions ATC clearances, climb or descent, for the whole flight
 - Added: Weather. METAR and TAF for both ends, and the ATIS from SayIntentions, FAA D-ATIS, VATSIM or IVAO
 - Added: SimBrief flight plans, with the OFP on screen and the numbers filled in for you
-- Added: Spoken crew callouts, with the volume and the accent your own
+- Added: Spoken crew callouts, with the volume and the accent you choose
 - Added: Cockpit lighting set for the time of day, anti-ice when the conditions call for it, and fuel managed through the flight
 - Added: Pause the simulator approaching the destination, or when fuel reaches a figure you set
 - Added: The panel. One page at a time down the left: flight, checklist, QRH, performance, weather, log and settings
     - Dark and light
-    - Tuck it away to a small 747 on the edge of the screen, and click that to bring it back
-    - Text size to taste
+    - Hide it as a small 747 on the edge of the screen, and click that to show it again
+    - Adjustable text size
 - Added: macOS and Linux versions
