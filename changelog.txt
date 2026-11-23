@@ -1,4 +1,17 @@
-﻿0.9.305
+﻿0.9.307
+- Added: When the APU battery is flat, the flight engineer says so and calls for ground power, which charges it. Transfer to APU power waits until it has charge
+- Added: After landing, the first officer sets the stabilizer trim to 7 units
+- Added: The crew can be heard in outside views (Settings > Crew, Hear the crew in outside views, on by default)
+- Added: A close button on the floating panel's header
+- Added: With the panel on the cockpit tablet, Plugins > 747 Fly the Line > Main Panel opens the floating window beside it. The tab on the tablet's edge still shows and hides the tablet's pages
+- Changed: After a step climb the crew accelerate to the Mach your SimBrief plan gives for the new level, such as .82 at FL260 and .85 at FL330. The Profile page shows it beside the next climb
+- Changed: The "Pause armed" line on the Flight page is green
+- Changed: When Find lowest safe thrust cannot derate, it says "No derate allowed due to performance requirements". The detail is in the log
+- Changed: Crew voice callouts, Automatic ice protection and Automatic engine start are on for a new install. Settings you have already saved are kept
+- Fixed: After an APU start that could not open its door, the preflight goes on with ground air instead of waiting for an APU warm-up
+- Fixed: The first officer no longer says "Standby" on the Taxi checklist's flight controls item while you are doing the check he is calling
+
+0.9.305
 - Added: Set speed bugs on the Landing page puts the landing bug and the flap speeds from the handbook on both airspeed indicators
 - Added: A Plugin filter on the Log page for the plugin's own messages, such as the panel moving to the tablet. They are kept out of Events and shown quieter in All
 - Changed: The takeoff calculator's Set speed bugs puts each bug exactly on its speed
