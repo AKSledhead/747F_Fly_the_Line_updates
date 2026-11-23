@@ -1,4 +1,14 @@
-﻿0.9.304
+﻿0.9.305
+- Added: Set speed bugs on the Landing page puts the landing bug and the flap speeds from the handbook on both airspeed indicators
+- Added: A Plugin filter on the Log page for the plugin's own messages, such as the panel moving to the tablet. They are kept out of Events and shown quieter in All
+- Changed: The takeoff calculator's Set speed bugs puts each bug exactly on its speed
+- Changed: Approach calls in the log say who spoke and what they said
+- Changed: The transition level from the ATIS is logged only when it changes
+- Changed: Cleared to push puts the beacon on whether or not Automatic engine start is on
+- Changed: Skip on the action bar is offered while a checklist is running, and greyed out otherwise
+- Changed: The confirm_pushback key binding does what the Cleared to push button does
+
+0.9.304
 - Added: The first officer says "off track" 50 nm from your SimBrief route, whatever is steering the aeroplane. At 150 nm and still getting further, the simulator pauses. Off-track is deliberate keeps it quiet for a cleared reroute
 
 0.9.303
