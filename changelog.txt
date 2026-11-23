@@ -1,4 +1,7 @@
-﻿0.9.303
+﻿0.9.304
+- Added: The first officer says "off track" 50 nm from your SimBrief route, whatever is steering the aeroplane. At 150 nm and still getting further, the simulator pauses. Off-track is deliberate keeps it quiet for a cleared reroute
+
+0.9.303
 - Added: On the climb out the first officer names each flap setting as he raises the flaps - "Flaps ten", "Flaps five", "Flaps one", "Flaps up" - and on a go-around clean-up
 - Changed: The After Takeoff checklist button shows at the foot of the Flight page from liftoff
 - Changed: Before the cruise, the Profile page's next climb reads "Calculated at cruise"
