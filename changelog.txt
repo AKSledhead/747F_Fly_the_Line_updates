@@ -1,4 +1,12 @@
-﻿0.9.308
+﻿0.9.309
+- Changed: The Performance pages list the speeds the way the Felis tablet does - V1, Vr, V2 and the flap speeds for takeoff, VREF, the approach speed and the flap speeds for landing - without the working behind them
+- Changed: The first officer sets the weather radar tilt by the handbook's table: +4 for takeoff down to -2 at FL350
+- Changed: When engine oil is low, the checklist says to refill it using the Felis EFB
+- Changed: The APU cool-down bar also shows when securing cold and dark
+- Fixed: The wing lights stay off for the taxi and come on with the landing lights at line-up
+- Fixed: The US captain no longer says a quick "uh" before reading a two or a three
+
+0.9.308
 - Fixed: When the cruise pause stops the sim, the Flight page says "Paused" instead of "Pause armed", with an Unpause button beside it. Once you unpause, the line goes away. A later pause, such as off-track or the P key, is not shown as the cruise pause
 - Fixed: The after-landing trim to 7 units waits until you are below 30 knots instead of giving up, and works with engines shut down for the taxi in
 - Fixed: At the gate with the engines running, a flat APU battery no longer starts the ground-power power-up sequence
