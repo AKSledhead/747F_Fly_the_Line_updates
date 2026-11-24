@@ -1,7 +1,7 @@
-64/lin.xpl|6387424
-64/mac.xpl|9739352
-64/win.xpl|3992064
-changelog.txt|32584
+64/lin.xpl|6392096
+64/mac.xpl|9772712
+64/win.xpl|3995136
+changelog.txt|33682
 THIRD_PARTY_NOTICES.txt|13754
 voice/EU/lines.pak|6363538
 voice/UK/lines.pak|7338801

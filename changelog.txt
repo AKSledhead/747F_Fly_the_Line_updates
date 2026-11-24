@@ -1,4 +1,14 @@
-﻿0.9.307
+﻿0.9.308
+- Fixed: When the cruise pause stops the sim, the Flight page says "Paused" instead of "Pause armed", with an Unpause button beside it. Once you unpause, the line goes away. A later pause, such as off-track or the P key, is not shown as the cruise pause
+- Fixed: The after-landing trim to 7 units waits until you are below 30 knots instead of giving up, and works with engines shut down for the taxi in
+- Fixed: At the gate with the engines running, a flat APU battery no longer starts the ground-power power-up sequence
+- Fixed: An APU you start by hand gets its one-minute warm-up before the crew use its bleed air
+- Fixed: When the plan's Mach for a new level is lower than the Mach being flown, the crew slow to it instead of holding the faster one
+- Fixed: A crew line that starts in the cockpit is still heard if you switch to an outside view while it plays
+- Fixed: A floating window you closed no longer reappears when you leave the cockpit view
+- Fixed: The pause airport and landing runway boxes keep updating after you put the tablet's pages away while typing in them
+
+0.9.307
 - Added: When the APU battery is flat, the flight engineer says so and calls for ground power, which charges it. Transfer to APU power waits until it has charge
 - Added: After landing, the first officer sets the stabilizer trim to 7 units
 - Added: The crew can be heard in outside views (Settings > Crew, Hear the crew in outside views, on by default)
