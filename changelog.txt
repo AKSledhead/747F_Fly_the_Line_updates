@@ -1,4 +1,13 @@
-﻿0.9.309
+﻿0.9.311
+- Changed: The plugin now installs in X-Plane 12/Resources/plugins/747_Fly_the_Line, where SkunkCrafts Updater finds it by itself. It stays hidden and does nothing outside the Felis 747; its menu appears when the Felis loads
+- Moving over: install the new copy, load the freighter once to bring your settings across, then quit X-Plane and delete the old Aircraft/747F_Felis/plugins/747_Fly_the_Line folder. The plugin shows a reminder until you do
+
+0.9.310
+- Added: On a new install, a welcome card at the top of the Flight page points you to Settings before your first flight
+- Added: In VR the Main Panel goes into the headset as a window you can work with the controllers. Nothing changes outside VR
+- Added: With Auto step climbs on, a green line beside "Pause armed" on the Flight page says so, with the next level and how far away it is
+
+0.9.309
 - Changed: The Performance pages list the speeds the way the Felis tablet does - V1, Vr, V2 and the flap speeds for takeoff, VREF, the approach speed and the flap speeds for landing - without the working behind them
 - Changed: The first officer sets the weather radar tilt by the handbook's table: +4 for takeoff down to -2 at FL350
 - Changed: When engine oil is low, the checklist says to refill it using the Felis EFB

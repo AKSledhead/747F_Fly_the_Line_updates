@@ -12,17 +12,19 @@ This repository holds the released plugin only, not its source.
 
 ## Where it installs
 
-In the freighter's own plugins folder, not in `Resources/plugins`:
+In X-Plane's own plugins folder:
 
 ```
-X-Plane 12/Aircraft/747F_Felis/plugins/747_Fly_the_Line/
+X-Plane 12/Resources/plugins/747_Fly_the_Line/
 ```
 
-X-Plane then loads the plugin only when the freighter is loaded.
+X-Plane loads it with every aircraft, but it stays hidden and does nothing
+outside the Felis 747. Its menu appears when the Felis loads.
 
-**Do not put a second copy in `Resources/plugins`.** X-Plane would load
-both, and every callout and switch action would happen twice. If anything
-happens twice, look for a second copy first.
+**Moving from an older install?** Older versions lived in
+`X-Plane 12/Aircraft/747F_Felis/plugins/747_Fly_the_Line/`. Load the
+freighter once with the new copy, which brings your settings across, then
+quit X-Plane and delete that old folder.
 
 ## Turn off similar add-ons
 
@@ -38,16 +40,6 @@ The voices are included, in `voice/<accent>/`, and are updated with the
 plugin. Three accents: American (`US`), British (`UK`) and European
 (`EU`). Delete an accent's folder to take it off the list; the next update
 restores it.
-
-## After a Felis update
-
-A Felis update usually replaces the whole aircraft folder, and the plugin
-is inside it. Install the plugin again afterwards. SkunkCrafts Updater
-does not list it until you do.
-
-**Before updating the Felis, back up
-`747_Fly_the_Line/64/747_Fly_the_Line_settings.txt`.** It holds all your
-settings, and is the one file the updater cannot restore.
 
 ## Your settings and log
 
