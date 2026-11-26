@@ -1,4 +1,7 @@
-﻿0.9.311
+﻿0.9.312
+- Added: An About page with the credits, and a way to support the plugin
+
+0.9.311
 - Changed: The plugin now installs in X-Plane 12/Resources/plugins/747_Fly_the_Line, where SkunkCrafts Updater finds it by itself. It stays hidden and does nothing outside the Felis 747; its menu appears when the Felis loads
 - Moving over: install the new copy, load the freighter once to bring your settings across, then quit X-Plane and delete the old Aircraft/747F_Felis/plugins/747_Fly_the_Line folder. The plugin shows a reminder until you do
 
@@ -183,10 +186,9 @@
 - Changed: The captain speaks a little quicker
 
 0.9.289
-- Changed, to the Felis normal procedures:
-
 - Added: The flight engineer balances the fuel. Tanks 2 and 3 more than 450 kg apart on tanks 2 & 3 to all engines: the low tank's crossfeed is closed until they are within 250 kg (FHB). On tank to engine, more than 500 kg apart: the high and low tanks' crossfeeds open, the others closed, the low tank's pumps off, until within 250 kg. Cruise only, never across a suspected leak
 - Added: "Parking brake is not set" on the Secure Cockpit checklist
+- Changed: To match the Felis normal procedures:
     - The autopilot engages at 1,200 ft after takeoff, not 1,000
     - One pack (pack 2) on the APU in the preflight, not three
     - The pressurization flight level scale is set to the cruising level plus 1,000 ft in the preflight, and follows each step climb
