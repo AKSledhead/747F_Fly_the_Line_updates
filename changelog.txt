@@ -1,4 +1,11 @@
-﻿0.9.312
+﻿0.9.313
+- Added: Settings > Crew > First officer flows, Flight engineer flows, Checklists and briefings, and Callouts, each on its own. Set your own switches and keep the checklists and calls
+- Changed: Crew voice callouts is now Crew voices
+- Changed: Settings has sections on the rail - Crew, Voices, Flight, Connections and Display - and a search box. Back returns to the page you were on
+- Added: An (i) after each setting explains it. Point at it, or tap it to keep the note open. Settings > Display > Info tooltips turns them off
+- Fixed: X-Plane could crash going into VR with the panel popped out
+
+0.9.312
 - Added: An About page with the credits, and a way to support the plugin
 
 0.9.311
